@@ -26,24 +26,32 @@ public class Repository {
     }
 
     public Result add(String... files) {
-        StringBuilder str = new StringBuilder();
+        StringBuilder filesMessage = new StringBuilder();
+
         for (String file : files) {
             if (filesInRepo.contains(file) || filesForAdd.contains(file)) {
                 return new Result("'" + file + "'" + " already exists", false);
             }
-            str.append(", " + file);
         }
         for (String file : files) {
             filesForAdd.add(file);
+            filesMessage.append(", " + file);
         }
+        String message = "added " + getCleanMessage(filesMessage) + " to stage";
+        Result result = new Result(message, true);
+        return result;
+    }
 
-        return new Result("added " + str.toString().substring(2, str.length()) + " to stage", true);
+    private String getCleanMessage(StringBuilder filesMessage) {
+        return filesMessage.toString().substring(2, filesMessage.length());
     }
 
     public Result commit(String message) {
         int changedFiles = filesForAdd.size() + filesForRemove.size();
         if (changedFiles == 0) {
-            return new Result("nothing to commit, working tree clean", false);
+            final String RESULT_MESSAGE = "nothing to commit, working tree clean";
+            Result result = new Result(RESULT_MESSAGE, false);
+            return result;
         }
 
         filesInRepo.addAll(filesForAdd);
@@ -91,12 +99,18 @@ public class Repository {
     }
 
     public Result createBranch(String name) {
+        Result result;
+        String message;
         if (branches.containsKey(name)) {
-            return new Result("branch " + name + " already exists", false);
+            message = "branch " + name + " already exists";
+            result = new Result(message, false);
+        } else {
+            Branch branch = new Branch(name, new ArrayList<>(currentBranch.getAllCommits()), new HashSet<>(filesInRepo));
+            branches.put(name, branch);
+            message = "created branch " + name;
+            result = new Result(message, true);
         }
-        branches.put(name,
-                new Branch(name, new ArrayList<>(currentBranch.getAllCommits()), new HashSet<>(filesInRepo)));
-        return new Result("created branch " + name, true);
+        return result;
     }
 
     public Result checkoutBranch(String name) {
