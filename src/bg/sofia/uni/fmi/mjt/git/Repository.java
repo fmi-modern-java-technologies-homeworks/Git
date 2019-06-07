@@ -135,14 +135,24 @@ public class Repository {
 
     public Result checkoutCommit(String hash) {
         List<Commit> newCommits = new LinkedList<>();
+        Result result;
+        String message;
         for (Commit commit : currentBranch.getAllCommits()) {
             newCommits.add(commit);
-            if (commit.getHash().equals(hash)) {
+            if (isHashEqual(commit, hash)) {
                 currentBranch.setCommits(newCommits);
                 filesInRepo = currentBranch.getLastCommit().getFiles();
-                return new Result("HEAD is now at " + hash, true);
+                message = "HEAD is now at " + hash;
+                result = new Result(message, true);
+                return result;
             }
         }
-        return new Result("commit " + hash + " does not exist", false);
+        message = "commit " + hash + " does not exist";
+        result = new Result(message, false);
+        return result;
+    }
+
+    private boolean isHashEqual(Commit commit, String hash) {
+        return commit.getHash().equals(hash);
     }
 }
