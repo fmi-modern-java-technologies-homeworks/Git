@@ -5,7 +5,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class RepositoryClass {
+public class RepositoryTest {
     private Repository repo;
 
     @Before
@@ -14,21 +14,32 @@ public class RepositoryClass {
     }
 
     @Test
-    public void testAdd_MultipleFiles() {
+    public void testAddMultipleFiles() {
         Result actual = repo.add("foo.txt", "bar.txt", "baz.txt");
         assertSuccess("added foo.txt, bar.txt, baz.txt to stage", actual);
     }
 
+    @Test
+    public void testAddDoesNothingWhenAnyFileIAlreadyExists() {
+        repo.add("foo.txt", "bar.txt", "baz.txt");
+
+        Result actual = repo.add("ter.txt", "baz.txt");
+        assertFail("'baz.txt' already exists", actual);
+
+        actual = repo.commit("After add");
+        assertSuccess("3 files changed", actual);
+    }
+
 
     @Test
-    public void testRemove_MultipleFiles() {
+    public void testRemoveMultipleFiles() {
         repo.add("foo.txt", "bar.txt", "baz.txt");
         Result actual = repo.remove("foo.txt", "bar.txt", "baz.txt");
         assertSuccess("added foo.txt, bar.txt, baz.txt for removal", actual);
     }
 
     @Test
-    public void testRemove_DoesNothingWhenAnyFileIsMissing() {
+    public void testRemoveDoesNothingWhenAnyFileIsMissing() {
         repo.add("foo.txt", "bar.txt");
 
         Result actual = repo.remove("foo.txt", "baz.txt");
@@ -39,7 +50,13 @@ public class RepositoryClass {
     }
 
     @Test
-    public void testCheckoutBranch_CanSwitchBranches() {
+    public void testCommitDoesNothingWhenNothingChanges() {
+        Result actual = repo.commit("Empty commit");
+        assertEquals("nothing to commit, working tree clean", actual.getMessage());
+    }
+
+    @Test
+    public void testCheckoutBranchCanSwitchBranches() {
         repo.add("src/Main.java");
         repo.commit("Add Main.java");
 
@@ -64,5 +81,17 @@ public class RepositoryClass {
     private static void assertSuccess(String expected, Result actual) {
         assertTrue(actual.isSuccessful());
         assertEquals(expected, actual.getMessage());
+    }
+
+    @Test
+    public void testCheckoutBranchWithInvalidBranchName() {
+        Result actual = repo.checkoutBranch("Invalid name");
+        assertEquals("branch Invalid name does not exist", actual.getMessage());
+    }
+
+    @Test
+    public void testCheckoutCommitWithInvalidHash() {
+        Result actual = repo.checkoutCommit("Invalid hash");
+        assertEquals("commit Invalid hash does not exist", actual.getMessage());
     }
 }

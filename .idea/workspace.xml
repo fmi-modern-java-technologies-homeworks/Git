@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0918f7ab-1a78-40ba-857e-61195d4ba0f8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/bg/sofia/uni/fmi/mjt/git/Commit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bg/sofia/uni/fmi/mjt/git/Commit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/bg/sofia/uni/fmi/mjt/git/Commit.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/bg/sofia/uni/fmi/mjt/git/Commit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/bg/sofia/uni/fmi/mjt/git/RepositoryClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/bg/sofia/uni/fmi/mjt/git/RepositoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/bg/sofia/uni/fmi/mjt/git/RepositoryTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bg/sofia/uni/fmi/mjt/git/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bg/sofia/uni/fmi/mjt/git/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/bg/sofia/uni/fmi/mjt/git/RepositoryClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/bg/sofia/uni/fmi/mjt/git/RepositoryTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -12,114 +17,92 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Git$RepositoryClass.ic" NAME="RepositoryClass Coverage Results" MODIFIED="1559948928214" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/Git$RepositoryClass.ic" NAME="RepositoryTest Coverage Results" MODIFIED="1559951581475" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>bg.sofia.uni.fmi.mjt.git.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Git$RepositoryClass_testCommitDoesNothingWhenNothingChanges.ic" NAME="RepositoryClass.testCommitDoesNothingWhenNothingChanges Coverage Results" MODIFIED="1559950947357" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>bg.sofia.uni.fmi.mjt.git.*</FILTER>
     </SUITE>
   </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="135" />
+  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/bg/sofia/uni/fmi/mjt/git/Branch.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#415#416#0" expanded="true" />
-                <element signature="e#442#443#0" expanded="true" />
-                <element signature="e#497#498#0" expanded="true" />
-                <element signature="e#538#539#0" expanded="true" />
-                <element signature="e#582#583#0" expanded="true" />
-                <element signature="e#620#621#0" expanded="true" />
-                <element signature="e#657#658#0" expanded="true" />
-                <element signature="e#711#712#0" expanded="true" />
-                <element signature="e#743#744#0" expanded="true" />
-                <element signature="e#783#784#0" expanded="true" />
-                <element signature="e#826#827#0" expanded="true" />
-                <element signature="e#856#857#0" expanded="true" />
-                <element signature="e#1662#1663#0" expanded="true" />
-                <element signature="e#1705#1706#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/bg/sofia/uni/fmi/mjt/git/Commit.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
-              <folding>
-                <element signature="e#827#828#0" expanded="true" />
-                <element signature="e#848#849#0" expanded="true" />
-                <element signature="e#882#883#0" expanded="true" />
-                <element signature="e#928#929#0" expanded="true" />
-                <element signature="e#1554#1555#0" expanded="true" />
-                <element signature="e#1573#1574#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/bg/sofia/uni/fmi/mjt/git/Result.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/bg/sofia/uni/fmi/mjt/git/Repository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="115" selection-start-line="115" selection-end-line="115" />
-              <folding>
-                <element signature="e#3175#3176#0" expanded="true" />
-                <element signature="e#3217#3218#0" expanded="true" />
-                <element signature="e#3250#3251#0" expanded="true" />
-                <element signature="e#3296#3297#0" expanded="true" />
-                <element signature="e#4435#4436#0" expanded="true" />
-                <element signature="e#4487#4488#0" expanded="true" />
-                <element signature="e#5258#5259#0" expanded="true" />
-                <element signature="e#5310#5311#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="469" column="11" lean-forward="true" selection-start-line="469" selection-start-column="11" selection-end-line="469" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/bg/sofia/uni/fmi/mjt/git/RepositoryClass.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/bg/sofia/uni/fmi/mjt/git/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.43422818">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/bg/sofia/uni/fmi/mjt/git/Result.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="44">
+                  <caret line="2" column="12" lean-forward="true" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/bg/sofia/uni/fmi/mjt/git/Commit.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="22">
+                  <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/bg/sofia/uni/fmi/mjt/git/Repository.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1595">
+                  <caret line="193" column="5" lean-forward="true" selection-start-line="193" selection-start-column="5" selection-end-line="193" selection-end-column="5" />
+                  <folding>
+                    <element signature="e#299#300#0" expanded="true" />
+                    <element signature="e#337#338#0" expanded="true" />
+                    <element signature="e#1349#1350#0" expanded="true" />
+                    <element signature="e#1428#1429#0" expanded="true" />
+                    <element signature="e#3175#3176#0" expanded="true" />
+                    <element signature="e#3217#3218#0" expanded="true" />
+                    <element signature="e#3250#3251#0" expanded="true" />
+                    <element signature="e#3296#3297#0" expanded="true" />
+                    <element signature="e#4435#4436#0" expanded="true" />
+                    <element signature="e#4487#4488#0" expanded="true" />
+                    <element signature="e#5258#5259#0" expanded="true" />
+                    <element signature="e#5310#5311#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/bg/sofia/uni/fmi/mjt/git/Main.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="132">
+                  <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/test/bg/sofia/uni/fmi/mjt/git/RepositoryTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="171">
+                  <caret line="92" column="49" selection-start-line="92" selection-start-column="49" selection-end-line="92" selection-end-column="49" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -131,6 +114,9 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>logMes</find>
+      <find>commit</find>
+      <find>add</find>
+      <find>checkoutCommit</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -139,13 +125,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/bg/sofia/uni/fmi/mjt/git/Main.java" />
         <option value="$PROJECT_DIR$/src/bg/sofia/uni/fmi/mjt/git/Branch.java" />
-        <option value="$PROJECT_DIR$/test/bg/sofia/uni/fmi/mjt/git/RepositoryClass.java" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/src/bg/sofia/uni/fmi/mjt/git/Repository.java" />
-        <option value="$PROJECT_DIR$/test/bg/sofia/uni/fmi/mjt/git/RepositoryTest.java" />
         <option value="$PROJECT_DIR$/src/bg/sofia/uni/fmi/mjt/git/Commit.java" />
+        <option value="$PROJECT_DIR$/test/bg/sofia/uni/fmi/mjt/git/RepositoryClass.java" />
+        <option value="$PROJECT_DIR$/src/bg/sofia/uni/fmi/mjt/git/Main.java" />
+        <option value="$PROJECT_DIR$/test/bg/sofia/uni/fmi/mjt/git/RepositoryTest.java" />
       </list>
     </option>
   </component>
@@ -202,7 +188,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559949035460" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559951621754" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -221,8 +207,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RepositoryClass">
-    <configuration name="RepositoryClass" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.RepositoryTest">
+    <configuration name="RepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Git" />
       <extension name="coverage">
         <pattern>
@@ -231,13 +217,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="bg.sofia.uni.fmi.mjt.git" />
-      <option name="MAIN_CLASS_NAME" value="bg.sofia.uni.fmi.mjt.git.RepositoryClass" />
+      <option name="MAIN_CLASS_NAME" value="bg.sofia.uni.fmi.mjt.git.RepositoryTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RepositoryClass.testAdd_MultipleFiles" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RepositoryTest.testAddDoesNothingWhenAnyFileIAlreadyExists" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Git" />
       <extension name="coverage">
         <pattern>
@@ -246,14 +232,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="bg.sofia.uni.fmi.mjt.git" />
-      <option name="MAIN_CLASS_NAME" value="bg.sofia.uni.fmi.mjt.git.RepositoryClass" />
-      <option name="METHOD_NAME" value="testAdd_MultipleFiles" />
+      <option name="MAIN_CLASS_NAME" value="bg.sofia.uni.fmi.mjt.git.RepositoryTest" />
+      <option name="METHOD_NAME" value="testAddDoesNothingWhenAnyFileIAlreadyExists" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RepositoryClass.testRemove_DoesNothingWhenAnyFileIsMissing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RepositoryTest.testCheckoutBranchWithInvalidBranchName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Git" />
       <extension name="coverage">
         <pattern>
@@ -262,8 +248,40 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="bg.sofia.uni.fmi.mjt.git" />
-      <option name="MAIN_CLASS_NAME" value="bg.sofia.uni.fmi.mjt.git.RepositoryClass" />
-      <option name="METHOD_NAME" value="testRemove_DoesNothingWhenAnyFileIsMissing" />
+      <option name="MAIN_CLASS_NAME" value="bg.sofia.uni.fmi.mjt.git.RepositoryTest" />
+      <option name="METHOD_NAME" value="testCheckoutBranchWithInvalidBranchName" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RepositoryTest.testCheckoutCommit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Git" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bg.sofia.uni.fmi.mjt.git.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="bg.sofia.uni.fmi.mjt.git" />
+      <option name="MAIN_CLASS_NAME" value="bg.sofia.uni.fmi.mjt.git.RepositoryTest" />
+      <option name="METHOD_NAME" value="testCheckoutCommit" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RepositoryTest.testCommitDoesNothingWhenNothingChanges" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Git" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bg.sofia.uni.fmi.mjt.git.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="bg.sofia.uni.fmi.mjt.git" />
+      <option name="MAIN_CLASS_NAME" value="bg.sofia.uni.fmi.mjt.git.RepositoryTest" />
+      <option name="METHOD_NAME" value="testCommitDoesNothingWhenNothingChanges" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -271,9 +289,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RepositoryClass" />
-        <item itemvalue="JUnit.RepositoryClass.testRemove_DoesNothingWhenAnyFileIsMissing" />
-        <item itemvalue="JUnit.RepositoryClass.testAdd_MultipleFiles" />
+        <item itemvalue="JUnit.RepositoryTest" />
+        <item itemvalue="JUnit.RepositoryTest.testCheckoutCommit" />
+        <item itemvalue="JUnit.RepositoryTest.testCheckoutBranchWithInvalidBranchName" />
+        <item itemvalue="JUnit.RepositoryTest.testCommitDoesNothingWhenNothingChanges" />
+        <item itemvalue="JUnit.RepositoryTest.testAddDoesNothingWhenAnyFileIAlreadyExists" />
       </list>
     </recent_temporary>
   </component>
@@ -291,11 +311,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RepositoryClass - 2019.06.07 at 20h 53m 05s.xml">
-      <configuration name="RepositoryClass" configurationId="JUnit" />
+    <history-entry file="RepositoryClass_testCommitDoesNothingWhenNothingChanges - 2019.06.08 at 02h 40m 15s.xml">
+      <configuration name="RepositoryClass.testCommitDoesNothingWhenNothingChanges" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RepositoryClass - 2019.06.08 at 02h 09m 16s.xml">
-      <configuration name="RepositoryClass" configurationId="JUnit" />
+    <history-entry file="RepositoryClass_testCommitDoesNothingWhenNothingChanges - 2019.06.08 at 02h 40m 37s.xml">
+      <configuration name="RepositoryClass.testCommitDoesNothingWhenNothingChanges" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RepositoryClass_testCommitDoesNothingWhenNothingChanges - 2019.06.08 at 02h 40m 49s.xml">
+      <configuration name="RepositoryClass.testCommitDoesNothingWhenNothingChanges" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RepositoryClass_testCommitDoesNothingWhenNothingChanges - 2019.06.08 at 02h 42m 21s.xml">
+      <configuration name="RepositoryClass.testCommitDoesNothingWhenNothingChanges" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RepositoryClass_testCommitDoesNothingWhenNothingChanges - 2019.06.08 at 02h 42m 29s.xml">
+      <configuration name="RepositoryClass.testCommitDoesNothingWhenNothingChanges" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RepositoryTest_testCheckoutBranchWithInvalidBranchName - 2019.06.08 at 02h 46m 49s.xml">
+      <configuration name="RepositoryTest.testCheckoutBranchWithInvalidBranchName" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RepositoryTest - 2019.06.08 at 02h 47m 01s.xml">
+      <configuration name="RepositoryTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RepositoryTest_testCheckoutCommit - 2019.06.08 at 02h 52m 28s.xml">
+      <configuration name="RepositoryTest.testCheckoutCommit" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RepositoryTest_testCheckoutCommit - 2019.06.08 at 02h 52m 56s.xml">
+      <configuration name="RepositoryTest.testCheckoutCommit" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RepositoryTest - 2019.06.08 at 02h 53m 10s.xml">
+      <configuration name="RepositoryTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView" selected-index="1">
@@ -317,50 +361,50 @@
       <window_info content_ui="combo" id="Project" order="3" weight="0.21006711" />
       <window_info id="Structure" order="4" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" />
-      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.50067115" side_tool="true" weight="0.32909605" />
+      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5013423" side_tool="true" weight="0.32909605" />
       <window_info anchor="bottom" id="Version Control" order="2" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" />
-      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.49932885" weight="0.32909605" />
+      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.4986577" visible="true" weight="0.32909605" />
       <window_info anchor="bottom" id="Debug" order="6" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="9" />
-      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.069127515" />
-      <window_info anchor="right" id="Theme Preview" order="0" />
-      <window_info anchor="right" id="Capture Analysis" order="1" />
-      <window_info anchor="right" id="Palette&#9;" order="2" />
-      <window_info anchor="right" id="Maven" order="3" />
-      <window_info anchor="right" id="Key Promoter X" order="4" />
+      <window_info active="true" anchor="right" id="Coverage" order="0" side_tool="true" visible="true" weight="0.27248323" />
+      <window_info anchor="right" id="Theme Preview" order="1" />
+      <window_info anchor="right" id="Capture Analysis" order="2" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
       <window_info anchor="right" id="Palette" order="5" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
+      <window_info anchor="right" id="Key Promoter X" order="7" weight="0.3295302" />
+      <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
     </layout>
     <layout-to-restore>
       <window_info id="Capture Tool" order="0" />
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info id="Image Layers" order="2" />
-      <window_info content_ui="combo" id="Project" order="3" visible="true" weight="0.21006711" />
+      <window_info content_ui="combo" id="Project" order="3" weight="0.21006711" />
       <window_info id="Structure" order="4" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="1" sideWeight="0.50067115" side_tool="true" visible="true" weight="0.32909605" />
+      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5013423" side_tool="true" weight="0.32909605" />
       <window_info anchor="bottom" id="Version Control" order="2" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" />
-      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.49932885" weight="0.32909605" />
+      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.4986577" visible="true" weight="0.32909605" />
       <window_info anchor="bottom" id="Debug" order="6" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="9" />
-      <window_info anchor="right" id="Coverage" order="0" side_tool="true" visible="true" weight="0.069127515" />
+      <window_info anchor="right" id="Coverage" order="0" side_tool="true" weight="0.27248323" />
       <window_info anchor="right" id="Theme Preview" order="1" />
       <window_info anchor="right" id="Capture Analysis" order="2" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="right" id="Maven" order="4" />
-      <window_info anchor="right" id="Key Promoter X" order="5" />
-      <window_info anchor="right" id="Palette" order="6" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Key Promoter X" order="7" weight="0.3295302" />
       <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
     </layout-to-restore>
@@ -386,54 +430,19 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/bg/sofia/uni/fmi/mjt/git/Result.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/bg/sofia/uni/fmi/mjt/git/RepositoryTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/bg/sofia/uni/fmi/mjt/git/Repository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="115" selection-start-line="115" selection-end-line="115" />
-          <folding>
-            <element signature="e#3175#3176#0" expanded="true" />
-            <element signature="e#3217#3218#0" expanded="true" />
-            <element signature="e#3250#3251#0" expanded="true" />
-            <element signature="e#3296#3297#0" expanded="true" />
-            <element signature="e#4435#4436#0" expanded="true" />
-            <element signature="e#4487#4488#0" expanded="true" />
-            <element signature="e#5258#5259#0" expanded="true" />
-            <element signature="e#5310#5311#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
-          <caret line="469" column="11" lean-forward="true" selection-start-line="469" selection-start-column="11" selection-end-line="469" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/bg/sofia/uni/fmi/mjt/git/RepositoryClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="564" column="11" lean-forward="true" selection-start-line="564" selection-start-column="11" selection-end-line="564" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/bg/sofia/uni/fmi/mjt/git/Branch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        <state relative-caret-position="22">
+          <caret line="2" column="25" lean-forward="true" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="e#415#416#0" expanded="true" />
             <element signature="e#442#443#0" expanded="true" />
             <element signature="e#497#498#0" expanded="true" />
@@ -452,17 +461,57 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/bg/sofia/uni/fmi/mjt/git/Result.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="12" lean-forward="true" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/bg/sofia/uni/fmi/mjt/git/Commit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
+        <state relative-caret-position="22">
+          <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
           <folding>
-            <element signature="e#827#828#0" expanded="true" />
-            <element signature="e#848#849#0" expanded="true" />
-            <element signature="e#882#883#0" expanded="true" />
-            <element signature="e#928#929#0" expanded="true" />
-            <element signature="e#1554#1555#0" expanded="true" />
-            <element signature="e#1573#1574#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bg/sofia/uni/fmi/mjt/git/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bg/sofia/uni/fmi/mjt/git/Repository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1595">
+          <caret line="193" column="5" lean-forward="true" selection-start-line="193" selection-start-column="5" selection-end-line="193" selection-end-column="5" />
+          <folding>
+            <element signature="e#299#300#0" expanded="true" />
+            <element signature="e#337#338#0" expanded="true" />
+            <element signature="e#1349#1350#0" expanded="true" />
+            <element signature="e#1428#1429#0" expanded="true" />
+            <element signature="e#3175#3176#0" expanded="true" />
+            <element signature="e#3217#3218#0" expanded="true" />
+            <element signature="e#3250#3251#0" expanded="true" />
+            <element signature="e#3296#3297#0" expanded="true" />
+            <element signature="e#4435#4436#0" expanded="true" />
+            <element signature="e#4487#4488#0" expanded="true" />
+            <element signature="e#5258#5259#0" expanded="true" />
+            <element signature="e#5310#5311#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/bg/sofia/uni/fmi/mjt/git/RepositoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="92" column="49" selection-start-line="92" selection-start-column="49" selection-end-line="92" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
