@@ -27,18 +27,21 @@ public class Repository {
 
     public Result add(String... files) {
         StringBuilder filesMessage = new StringBuilder();
-
+        Result result;
+        String message;
         for (String file : files) {
             if (filesInRepo.contains(file) || filesForAdd.contains(file)) {
-                return new Result("'" + file + "'" + " already exists", false);
+                message = "'" + file + "'" + " already exists";
+                result = new Result(message, false);
+                return result;
             }
         }
         for (String file : files) {
             filesForAdd.add(file);
             filesMessage.append(", " + file);
         }
-        String message = "added " + getCleanMessage(filesMessage) + " to stage";
-        Result result = new Result(message, true);
+        message = "added " + getCleanMessage(filesMessage) + " to stage";
+        result = new Result(message, true);
         return result;
     }
 
