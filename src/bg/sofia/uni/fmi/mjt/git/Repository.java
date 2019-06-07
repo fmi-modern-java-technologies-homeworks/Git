@@ -1,5 +1,5 @@
 package bg.sofia.uni.fmi.mjt.git;
-
+    
 import java.util.*;
 
 public class Repository {
@@ -26,7 +26,6 @@ public class Repository {
     }
 
     public Result add(String... files) {
-        StringBuilder filesMessage = new StringBuilder();
         Result result;
         String message;
         for (String file : files) {
@@ -36,10 +35,8 @@ public class Repository {
                 return result;
             }
         }
-        for (String file : files) {
-            filesForAdd.add(file);
-            filesMessage.append(", " + file);
-        }
+        addFiles(files);
+        StringBuilder filesMessage = createFileMessage(files);
         message = "added " + getCleanMessage(filesMessage) + " to stage";
         result = new Result(message, true);
         return result;
@@ -47,6 +44,20 @@ public class Repository {
 
     private boolean isFileContained(String file) {
         return filesInRepo.contains(file) || filesForAdd.contains(file);
+    }
+
+    private void addFiles(String... files) {
+        for (String file : files) {
+            filesForAdd.add(file);
+        }
+    }
+
+    private StringBuilder createFileMessage(String... files) {
+        StringBuilder message = new StringBuilder();
+        for (String file : files) {
+            message.append(", " + file);
+        }
+        return message;
     }
 
     private String getCleanMessage(StringBuilder filesMessage) {
@@ -102,14 +113,6 @@ public class Repository {
                 filesForRemove.add(file);
             }
         }
-    }
-
-    private StringBuilder createFileMessage(String... files) {
-        StringBuilder message = new StringBuilder();
-        for (String file : files) {
-            message.append(", " + file);
-        }
-        return message;
     }
 
     private boolean isFileNotContained(String file) {
