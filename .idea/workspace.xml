@@ -7,7 +7,6 @@
       <change beforePath="$PROJECT_DIR$/Git.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Git.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/bg/sofia/uni/fmi/mjt/git/Branch.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/bg/sofia/uni/fmi/mjt/git/Branch.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/bg/sofia/uni/fmi/mjt/git/Commit.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/bg/sofia/uni/fmi/mjt/git/Commit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/bg/sofia/uni/fmi/mjt/git/Repository.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/bg/sofia/uni/fmi/mjt/git/Repository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/bg/sofia/uni/fmi/mjt/git/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bg/sofia/uni/fmi/mjt/git/Repository.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
@@ -72,8 +71,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/bg/sofia/uni/fmi/mjt/git/Repository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="16">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            <state relative-caret-position="308">
+              <caret line="100" selection-start-line="100" selection-end-line="100" />
               <folding>
                 <element signature="e#299#300#0" expanded="true" />
                 <element signature="e#337#338#0" expanded="true" />
@@ -93,8 +92,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8140">
-              <caret line="91" column="8" selection-start-line="91" selection-start-column="8" selection-end-line="91" selection-end-column="8" />
+            <state relative-caret-position="22">
+              <caret line="477" column="8" selection-start-line="477" selection-start-column="8" selection-end-line="477" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -211,7 +210,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559926515202" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559926861253" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
@@ -443,15 +442,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8140">
-          <caret line="91" column="8" selection-start-line="91" selection-start-column="8" selection-end-line="91" selection-end-column="8" />
+        <state relative-caret-position="22">
+          <caret line="477" column="8" selection-start-line="477" selection-start-column="8" selection-end-line="477" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/bg/sofia/uni/fmi/mjt/git/Repository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        <state relative-caret-position="308">
+          <caret line="100" selection-start-line="100" selection-end-line="100" />
           <folding>
             <element signature="e#299#300#0" expanded="true" />
             <element signature="e#337#338#0" expanded="true" />

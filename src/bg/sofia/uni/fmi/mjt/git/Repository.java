@@ -74,13 +74,23 @@ public class Repository {
     }
 
     public Result remove(String... files) {
-        StringBuilder str = new StringBuilder();
+        String message;
+        Result result;
         for (String file : files) {
-            if (!filesInRepo.contains(file) && !filesForAdd.contains(file)) {
-                return new Result("'" + file + "'" + " did not match any files", false);
+            if (isFileNotContained(file)) {
+                message = "'" + file + "'" + " did not match any files";
+                result = new Result(message, false);
+                return result;
             }
-            str.append(", " + file);
         }
+        removeFiles(files);
+        StringBuilder fileMessage = createFileMessage(files);
+        message = "added " + getCleanMessage(fileMessage) + " for removal";
+        result = new Result(message, true);
+        return result;
+    }
+
+    private void removeFiles(String... files) {
         for (String file : files) {
             if (filesForAdd.contains(file)) {
                 filesForAdd.remove(file);
@@ -88,7 +98,18 @@ public class Repository {
                 filesForRemove.add(file);
             }
         }
-        return new Result("added " + str.toString().substring(2, str.length()) + " for removal", true);
+    }
+
+    private StringBuilder createFileMessage(String... files) {
+        StringBuilder message = new StringBuilder();
+        for (String file : files) {
+            message.append(", " + file);
+        }
+        return message;
+    }
+
+    private boolean isFileNotContained(String file) {
+        return !filesInRepo.contains(file) && !filesForAdd.contains(file);
     }
 
     public Commit getHead() {
