@@ -114,12 +114,23 @@ public class Repository {
     }
 
     public Result checkoutBranch(String name) {
-        if (!branches.containsKey(name)) {
-            return new Result("branch " + name + " does not exist", false);
+        Result result;
+        String message;
+        if (isBranchNotExist(name)) {
+            message = "branch " + name + " does not exist";
+            result = new Result(message, false);
+            return result;
+        } else {
+            currentBranch = branches.get(name);
+            filesInRepo = new HashSet<>(branches.get(name).getAllFiles());
+            message = "switched to branch " + name;
+            result = new Result(message, true);
         }
-        currentBranch = branches.get(name);
-        filesInRepo = new HashSet<>(branches.get(name).getAllFiles());
-        return new Result("switched to branch " + name, true);
+        return result;
+    }
+
+    private boolean isBranchNotExist(String name) {
+        return !(branches.containsKey(name));
     }
 
     public Result checkoutCommit(String hash) {
