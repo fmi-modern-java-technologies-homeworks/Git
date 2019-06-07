@@ -40,10 +40,13 @@ public class Branch {
     }
 
     public Result log() {
+        Result result;
         if (isEmpty()) {
-            return new Result("branch " + name + " does not have any commits yet", false);
+            result = new Result("branch " + name + " does not have any commits yet", false);
+        } else {
+            result = new Result(getBranchLogMessage(), true);
         }
-        return new Result(getBranchLogMessage(), true);
+        return result;
     }
 
     public String getBranchLogMessage() {
