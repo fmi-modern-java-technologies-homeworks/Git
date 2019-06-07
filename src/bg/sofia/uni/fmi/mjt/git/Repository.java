@@ -30,7 +30,7 @@ public class Repository {
         Result result;
         String message;
         for (String file : files) {
-            if (filesInRepo.contains(file) || filesForAdd.contains(file)) {
+            if (isFileContained(file)) {
                 message = "'" + file + "'" + " already exists";
                 result = new Result(message, false);
                 return result;
@@ -43,6 +43,10 @@ public class Repository {
         message = "added " + getCleanMessage(filesMessage) + " to stage";
         result = new Result(message, true);
         return result;
+    }
+
+    private boolean isFileContained(String file) {
+        return filesInRepo.contains(file) || filesForAdd.contains(file);
     }
 
     private String getCleanMessage(StringBuilder filesMessage) {
