@@ -10,56 +10,57 @@ import java.util.Set;
 
 public class Commit {
 
-	private String message;
-	private Set<String> files;
-	private LocalDateTime timeOfCreation;
+    private String message;
+    private Set<String> files;
+    private LocalDateTime timeOfCreation;
 
-	static private DateTimeFormatter formatter = DateTimeFormatter.ofPattern("EEE MMM d HH:mm Y", Locale.ENGLISH);
+    static private DateTimeFormatter formatter = DateTimeFormatter.ofPattern("EEE MMM d HH:mm Y", Locale.ENGLISH);
 
-	public Commit(String message, Set<String> files) {
-		this.message = message;
-		this.files = files;
-		timeOfCreation = LocalDateTime.now();
-	}
+    public Commit(String message, Set<String> files) {
+        this.message = message;
+        this.files = files;
+        timeOfCreation = LocalDateTime.now();
+    }
 
-	public String getLogMessage() {
-		return new String("commit " + getHash() + "\n" + "Date: " + formattedDate() + "\n\n\t" + getMessage());
-	}
+    public String getLogMessage() {
+        String logMessage = "commit " + getHash() + "\n" + "Date: " + formattedDate() + "\n\n\t" + getMessage();
+        return logMessage;
+    }
 
-	public String getMessage() {
-		return message;
-	}
+    public String getMessage() {
+        return message;
+    }
 
-	public String formattedDate() {
-		return timeOfCreation.format(formatter);
-	}
+    public String formattedDate() {
+        return timeOfCreation.format(formatter);
+    }
 
-	public String hexDigest(String input) {
-		MessageDigest digest = null;
-		try {
-			digest = MessageDigest.getInstance("SHA-1");
-		} catch (NoSuchAlgorithmException e) {
-			e.printStackTrace();
-		}
-		byte[] bytes = digest.digest(input.getBytes(StandardCharsets.UTF_8));
-		return convertBytesToHex(bytes);
-	}
+    public String hexDigest(String input) {
+        MessageDigest digest = null;
+        try {
+            digest = MessageDigest.getInstance("SHA-1");
+        } catch (NoSuchAlgorithmException e) {
+            e.printStackTrace();
+        }
+        byte[] bytes = digest.digest(input.getBytes(StandardCharsets.UTF_8));
+        return convertBytesToHex(bytes);
+    }
 
-	private String convertBytesToHex(byte[] bytes) {
-		StringBuilder hex = new StringBuilder();
-		for (byte current : bytes) {
-			hex.append(String.format("%02x", current));
-		}
+    private String convertBytesToHex(byte[] bytes) {
+        StringBuilder hex = new StringBuilder();
+        for (byte current : bytes) {
+            hex.append(String.format("%02x", current));
+        }
 
-		return hex.toString();
-	}
+        return hex.toString();
+    }
 
-	public String getHash() {
+    public String getHash() {
 
-		return hexDigest(formattedDate() + message);
-	}
+        return hexDigest(formattedDate() + message);
+    }
 
-	public Set<String> getFiles() {
-		return files;
-	}
+    public Set<String> getFiles() {
+        return files;
+    }
 }
