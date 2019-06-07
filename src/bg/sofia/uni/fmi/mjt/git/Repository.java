@@ -49,23 +49,28 @@ public class Repository {
         return filesMessage.toString().substring(2, filesMessage.length());
     }
 
-    public Result commit(String message) {
+    public Result commit(String commitMessage) {
         int changedFiles = filesForAdd.size() + filesForRemove.size();
+        Result result;
+        String message;
+
         if (changedFiles == 0) {
-            final String RESULT_MESSAGE = "nothing to commit, working tree clean";
-            Result result = new Result(RESULT_MESSAGE, false);
+            message = "nothing to commit, working tree clean";
+            result = new Result(message, false);
             return result;
         }
 
         filesInRepo.addAll(filesForAdd);
         filesInRepo.removeAll(filesForRemove);
 
-        currentBranch.commit(new Commit(message, new HashSet<>(filesInRepo)));
+        currentBranch.commit(new Commit(commitMessage, new HashSet<>(filesInRepo)));
 
         filesForAdd.clear();
         filesForRemove.clear();
 
-        return new Result(changedFiles + " files changed", true);
+        message = changedFiles + " files changed";
+        result = new Result(message, true);
+        return result;
     }
 
     public Result remove(String... files) {
