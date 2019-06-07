@@ -1,5 +1,5 @@
 package bg.sofia.uni.fmi.mjt.git;
-    
+
 import java.util.*;
 
 public class Repository {
@@ -78,7 +78,8 @@ public class Repository {
         filesInRepo.addAll(filesForAdd);
         filesInRepo.removeAll(filesForRemove);
 
-        currentBranch.commit(new Commit(commitMessage, new HashSet<>(filesInRepo)));
+        Commit commit = new Commit(commitMessage, new HashSet<>(filesInRepo));
+        currentBranch.commit(commit);
 
         filesForAdd.clear();
         filesForRemove.clear();

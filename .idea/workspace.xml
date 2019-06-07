@@ -5,7 +5,6 @@
       <change afterPath="$PROJECT_DIR$/test/bg/sofia/uni/fmi/mjt/git/RepositoryClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Git.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Git.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/bg/sofia/uni/fmi/mjt/git/Branch.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/bg/sofia/uni/fmi/mjt/git/Branch.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/bg/sofia/uni/fmi/mjt/git/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bg/sofia/uni/fmi/mjt/git/Repository.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
@@ -71,7 +70,7 @@
         <entry file="file://$PROJECT_DIR$/src/bg/sofia/uni/fmi/mjt/git/Repository.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="528">
-              <caret line="114" selection-start-line="114" selection-end-line="114" />
+              <caret line="115" selection-start-line="115" selection-end-line="115" />
               <folding>
                 <element signature="e#3175#3176#0" expanded="true" />
                 <element signature="e#3217#3218#0" expanded="true" />
@@ -89,8 +88,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="208" selection-start-line="208" selection-end-line="208" />
+            <state relative-caret-position="66">
+              <caret line="449" selection-start-line="449" selection-end-line="449" />
             </state>
           </provider>
         </entry>
@@ -141,6 +140,7 @@
         <option value="$PROJECT_DIR$/test/bg/sofia/uni/fmi/mjt/git/RepositoryClass.java" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/src/bg/sofia/uni/fmi/mjt/git/Repository.java" />
+        <option value="$PROJECT_DIR$/test/bg/sofia/uni/fmi/mjt/git/RepositoryTest.java" />
       </list>
     </option>
   </component>
@@ -207,9 +207,9 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559927544490" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559929836394" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
@@ -300,7 +300,15 @@
       <configuration name="RepositoryClass" configurationId="JUnit" />
     </history-entry>
   </component>
-  <component name="TodoView" selected-index="1" />
+  <component name="TodoView" selected-index="1">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="840" extended-state="6" />
     <editor active="true" />
@@ -375,6 +383,10 @@
       </map>
     </option>
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/bg/sofia/uni/fmi/mjt/git/Branch.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -430,24 +442,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/bg/sofia/uni/fmi/mjt/git/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="208" selection-start-line="208" selection-end-line="208" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/test/bg/sofia/uni/fmi/mjt/git/RepositoryTest.java" />
     <entry file="file://$PROJECT_DIR$/src/bg/sofia/uni/fmi/mjt/git/Repository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
-          <caret line="114" selection-start-line="114" selection-end-line="114" />
+          <caret line="115" selection-start-line="115" selection-end-line="115" />
           <folding>
             <element signature="e#3175#3176#0" expanded="true" />
             <element signature="e#3217#3218#0" expanded="true" />
@@ -518,6 +517,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
