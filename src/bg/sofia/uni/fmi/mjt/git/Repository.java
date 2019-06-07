@@ -12,9 +12,14 @@ public class Repository {
     private Set<String> filesForRemove;
 
     public Repository() {
+        initializeRepository();
+    }
+
+    private void initializeRepository() {
         filesInRepo = new HashSet<>();
         branches = new HashMap<>();
-        branches.put("master", new Branch("master", new ArrayList<>(), new HashSet<>()));
+        Branch branch = new Branch("master", new ArrayList<>(), new HashSet<>());
+        branches.put("master", branch);
         currentBranch = branches.get("master");
         filesForAdd = new LinkedHashSet<>();
         filesForRemove = new LinkedHashSet<>();
@@ -68,7 +73,6 @@ public class Repository {
             }
         }
         return new Result("added " + str.toString().substring(2, str.length()) + " for removal", true);
-
     }
 
     public Commit getHead() {
@@ -105,7 +109,6 @@ public class Repository {
     }
 
     public Result checkoutCommit(String hash) {
-
         List<Commit> newCommits = new LinkedList<>();
         for (Commit commit : currentBranch.getAllCommits()) {
             newCommits.add(commit);
