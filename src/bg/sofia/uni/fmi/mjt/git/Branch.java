@@ -51,15 +51,18 @@ public class Branch {
 
     public String getBranchLogMessage() {
         StringBuilder s = new StringBuilder();
+        String commitMessage;
         for (int i = commits.size() - 1; i > 0; --i) {
-            s.append(commits.get(i).getLogMessage() + "\n\n");
+            commitMessage = commits.get(i).getLogMessage();
+            s.append(commitMessage + "\n\n");
         }
-        s.append(commits.get(0).getLogMessage());
+        final int INDEX_OF_FIRST_COMMIT = 0;
+        commitMessage = commits.get(INDEX_OF_FIRST_COMMIT).getLogMessage();
+        s.append(commitMessage);
         return s.toString();
     }
 
     public Set<String> getAllFiles() {
         return new HashSet<>(files);
     }
-
 }
