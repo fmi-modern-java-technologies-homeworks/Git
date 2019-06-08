@@ -23,7 +23,7 @@ public class StageAreaRemove {
         files.clear();
     }
 
-    public int numberOfFiles() {
+    public int getNumberOfFiles() {
         return files.size();
     }
     //add
