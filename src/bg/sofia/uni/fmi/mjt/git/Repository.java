@@ -69,18 +69,24 @@ public class Repository {
             return result;
         }
 
-        filesInRepo.addAll(stageAdd.getAll());
-        filesInRepo.removeAll(stageRemove.getAll());
-
+        commitFilesFromStageArea();
         Commit commit = new Commit(commitMessage, new HashSet<>(filesInRepo));
         currentBranch.commit(commit);
-
-        stageAdd.clearStage();
-        stageRemove.clearStage();
+        clearStage();
 
         message = changedFiles + " files changed";
         result = new Result(message, true);
         return result;
+    }
+
+    private void commitFilesFromStageArea(){
+        filesInRepo.addAll(stageAdd.getAll());
+        filesInRepo.removeAll(stageRemove.getAll());
+    }
+
+    private void clearStage() {
+        stageAdd.clearStage();
+        stageRemove.clearStage();
     }
 
     public Result remove(String... files) {
