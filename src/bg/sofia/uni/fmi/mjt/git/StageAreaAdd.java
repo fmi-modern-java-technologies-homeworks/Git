@@ -1,16 +1,20 @@
 package bg.sofia.uni.fmi.mjt.git;
 
+import java.util.LinkedHashSet;
 import java.util.Set;
 
 public class StageAreaAdd {
     private Set<String> files;
 //    private Set<String> filesForRemove;
 
+    public StageAreaAdd() {
+        this.files = new LinkedHashSet<>();
+    }
+
     public void add(String... filesForAdding) {
-        for (String file : files) {
+        for (String file : filesForAdding) {
             files.add(file);
         }
-
     }
 
     public int getNumberOfFiles() {
@@ -21,10 +25,17 @@ public class StageAreaAdd {
         files.clear();
     }
 
-    public boolean isFileContined(String file) {
+    public boolean isFileContained(String file) {
         return files.contains(file);
     }
 
+    public Set<String> getAll() {
+        return files;
+    }
+
+    public void remove(String file) {
+        files.remove(file);
+    }
     //add
     //remove
     //count/number

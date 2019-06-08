@@ -8,7 +8,8 @@ public class Repository {
     private Branch currentBranch;
     private Map<String, Branch> branches;
 
-    private Set<String> filesForAdd;
+    private StageAreaAdd stageAdd;
+    //    private Set<String> filesForAdd;
     private Set<String> filesForRemove;
 
     public Repository() {
@@ -21,7 +22,7 @@ public class Repository {
         Branch branch = new Branch("master", new ArrayList<>(), new HashSet<>());
         branches.put("master", branch);
         currentBranch = branches.get("master");
-        filesForAdd = new LinkedHashSet<>();
+        stageAdd = new StageAreaAdd();
         filesForRemove = new LinkedHashSet<>();
     }
 
@@ -35,7 +36,7 @@ public class Repository {
                 return result;
             }
         }
-        addFiles(files);
+        stageAdd.add(files);
         StringBuilder filesMessage = createFileMessage(files);
         message = "added " + getCleanMessage(filesMessage) + " to stage";
         result = new Result(message, true);
@@ -43,13 +44,7 @@ public class Repository {
     }
 
     private boolean isFileContained(String file) {
-        return filesInRepo.contains(file) || filesForAdd.contains(file);
-    }
-
-    private void addFiles(String... files) {
-        for (String file : files) {
-            filesForAdd.add(file);
-        }
+        return filesInRepo.contains(file) || stageAdd.isFileContained(file);
     }
 
     private StringBuilder createFileMessage(String... files) {
@@ -65,7 +60,7 @@ public class Repository {
     }
 
     public Result commit(String commitMessage) {
-        int changedFiles = filesForAdd.size() + filesForRemove.size();
+        int changedFiles = stageAdd.getNumberOfFiles() + filesForRemove.size();
         Result result;
         String message;
 
@@ -75,13 +70,13 @@ public class Repository {
             return result;
         }
 
-        filesInRepo.addAll(filesForAdd);
+        filesInRepo.addAll(stageAdd.getAll());
         filesInRepo.removeAll(filesForRemove);
 
         Commit commit = new Commit(commitMessage, new HashSet<>(filesInRepo));
         currentBranch.commit(commit);
 
-        filesForAdd.clear();
+        stageAdd.clearStage();
         filesForRemove.clear();
 
         message = changedFiles + " files changed";
@@ -108,8 +103,8 @@ public class Repository {
 
     private void removeFiles(String... files) {
         for (String file : files) {
-            if (filesForAdd.contains(file)) {
-                filesForAdd.remove(file);
+            if (stageAdd.isFileContained(file)) {
+                stageAdd.remove(file);
             } else {
                 filesForRemove.add(file);
             }
@@ -117,7 +112,7 @@ public class Repository {
     }
 
     private boolean isFileNotContained(String file) {
-        return !filesInRepo.contains(file) && !filesForAdd.contains(file);
+        return !filesInRepo.contains(file) && !stageAdd.isFileContained(file);
     }
 
     public Commit getHead() {
