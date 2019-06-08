@@ -5,7 +5,6 @@ import java.util.Set;
 
 public class StageAreaAdd {
     private Set<String> files;
-//    private Set<String> filesForRemove;
 
     public StageAreaAdd() {
         this.files = new LinkedHashSet<>();
@@ -36,10 +35,4 @@ public class StageAreaAdd {
     public void remove(String file) {
         files.remove(file);
     }
-    //add
-    //remove
-    //count/number
-    //clear
-
-    //files for add contains
 }

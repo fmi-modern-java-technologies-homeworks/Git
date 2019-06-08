@@ -9,7 +9,6 @@ public class Repository {
     private Map<String, Branch> branches;
 
     private StageAreaAdd stageAdd;
-    //    private Set<String> filesForAdd;
     private Set<String> filesForRemove;
 
     public Repository() {
@@ -102,11 +101,12 @@ public class Repository {
     }
 
     private void removeFiles(String... files) {
+        List<String> filesForRemoveC = new ArrayList<>();
         for (String file : files) {
             if (stageAdd.isFileContained(file)) {
                 stageAdd.remove(file);
             } else {
-                filesForRemove.add(file);
+                filesForRemoveC.add(file);
             }
         }
     }
